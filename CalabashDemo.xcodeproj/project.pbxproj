@@ -15,6 +15,8 @@
 		420D8EDE1A1CE0CC00F50B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420D8EDD1A1CE0CC00F50B6C /* Images.xcassets */; };
 		420D8EE11A1CE0CC00F50B6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420D8EDF1A1CE0CC00F50B6C /* LaunchScreen.xib */; };
 		420D8EED1A1CE0CC00F50B6C /* CalabashDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D8EEC1A1CE0CC00F50B6C /* CalabashDemoTests.m */; };
+		421D46601A8BBE0E00DD4B6E /* MyCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 421D465F1A8BBE0E00DD4B6E /* MyCustomLabel.m */; };
+		421D46611A8BBE0E00DD4B6E /* MyCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 421D465F1A8BBE0E00DD4B6E /* MyCustomLabel.m */; };
 		427BC52F1A1CE1A500CB25B4 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427BC52E1A1CE1A500CB25B4 /* ResultViewController.m */; };
 		620426e2a03ffc755d2b21d3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420D8EDF1A1CE0CC00F50B6C /* LaunchScreen.xib */; };
 		7581116518b43d3eaca1e743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 420D8ED21A1CE0CC00F50B6C /* main.m */; };
@@ -50,6 +52,8 @@
 		420D8EE61A1CE0CC00F50B6C /* CalabashDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalabashDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		420D8EEB1A1CE0CC00F50B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		420D8EEC1A1CE0CC00F50B6C /* CalabashDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalabashDemoTests.m; sourceTree = "<group>"; };
+		421D465E1A8BBE0E00DD4B6E /* MyCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomLabel.h; sourceTree = "<group>"; };
+		421D465F1A8BBE0E00DD4B6E /* MyCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomLabel.m; sourceTree = "<group>"; };
 		424666661A1F23C3006DEF10 /* CalabashDemo-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalabashDemo-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		427BC52D1A1CE1A500CB25B4 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		427BC52E1A1CE1A500CB25B4 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 			children = (
 				420D8ED41A1CE0CC00F50B6C /* AppDelegate.h */,
 				420D8ED51A1CE0CC00F50B6C /* AppDelegate.m */,
+				421D465E1A8BBE0E00DD4B6E /* MyCustomLabel.h */,
+				421D465F1A8BBE0E00DD4B6E /* MyCustomLabel.m */,
 				420D8ED71A1CE0CC00F50B6C /* InputViewController.h */,
 				420D8ED81A1CE0CC00F50B6C /* InputViewController.m */,
 				427BC52D1A1CE1A500CB25B4 /* ResultViewController.h */,
@@ -287,6 +293,7 @@
 				420D8ED91A1CE0CC00F50B6C /* InputViewController.m in Sources */,
 				420D8ED61A1CE0CC00F50B6C /* AppDelegate.m in Sources */,
 				420D8ED31A1CE0CC00F50B6C /* main.m in Sources */,
+				421D46601A8BBE0E00DD4B6E /* MyCustomLabel.m in Sources */,
 				427BC52F1A1CE1A500CB25B4 /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +313,7 @@
 				76020a0597886b7ef58286a6 /* InputViewController.m in Sources */,
 				0b4b034437fa3e59c22d1ab0 /* AppDelegate.m in Sources */,
 				7581116518b43d3eaca1e743 /* main.m in Sources */,
+				421D46611A8BBE0E00DD4B6E /* MyCustomLabel.m in Sources */,
 				f1dcd58be6d15aa531ce657e /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

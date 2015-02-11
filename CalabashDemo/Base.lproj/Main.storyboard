@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yAH-bR-DNl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yAH-bR-DNl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -41,6 +42,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Inputs_NextButton"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="rHW-w3-oBE" kind="show" id="1AA-bu-U17"/>
                                 </connections>
@@ -53,13 +57,32 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Input_Textfield"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a normal label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DB-N9-nj6">
+                                <rect key="frame" x="219.5" y="531" width="161.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a label with custom class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XP-XL-7Y9" customClass="MyCustomLabel">
+                                <rect key="frame" x="176.5" y="559.5" width="247" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4XP-XL-7Y9" secondAttribute="centerX" id="1Ab-Sl-b2e"/>
                             <constraint firstItem="Mlt-aE-OBe" firstAttribute="top" secondItem="QIy-od-QzH" secondAttribute="bottom" constant="8" id="G4m-gd-DTW"/>
+                            <constraint firstItem="anx-b6-t3L" firstAttribute="top" secondItem="4XP-XL-7Y9" secondAttribute="bottom" constant="20" id="LLs-aB-Dd3"/>
                             <constraint firstItem="FYd-2A-PD7" firstAttribute="top" secondItem="Mlt-aE-OBe" secondAttribute="bottom" constant="8" id="MGQ-n3-170"/>
+                            <constraint firstAttribute="centerX" secondItem="6DB-N9-nj6" secondAttribute="centerX" id="S5g-Sw-mCA"/>
                             <constraint firstAttribute="centerX" secondItem="Mlt-aE-OBe" secondAttribute="centerX" id="etP-vz-BiA"/>
+                            <constraint firstItem="4XP-XL-7Y9" firstAttribute="top" secondItem="6DB-N9-nj6" secondAttribute="bottom" constant="8" id="niJ-Mk-rtD"/>
                             <constraint firstAttribute="centerX" secondItem="FYd-2A-PD7" secondAttribute="centerX" id="zZx-FY-xGC"/>
                         </constraints>
                     </view>
@@ -89,6 +112,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="Result_ResultLabel"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
