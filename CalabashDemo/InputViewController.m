@@ -9,9 +9,10 @@
 #import "InputViewController.h"
 #import "ResultViewController.h"
 
-@interface InputViewController ()
+@interface InputViewController () <UITextFieldDelegate>
 
 @property (nonatomic, weak) IBOutlet UITextField *textField;
+@property (nonatomic, weak) IBOutlet UIButton *nextButton;
 
 @end
 
@@ -19,6 +20,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     ((ResultViewController *)segue.destinationViewController).text = self.textField.text;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSString *newText = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    self.nextButton.enabled = newText.length > 0;
+    return YES;
 }
 
 @end
