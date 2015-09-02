@@ -88,6 +88,9 @@
                             <constraint firstItem="4XP-XL-7Y9" firstAttribute="top" secondItem="6DB-N9-nj6" secondAttribute="bottom" constant="8" id="niJ-Mk-rtD"/>
                             <constraint firstAttribute="centerX" secondItem="FYd-2A-PD7" secondAttribute="centerX" id="zZx-FY-xGC"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="inputPage"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Input" id="6kJ-Sx-L2v"/>
                     <connections>
@@ -125,6 +128,9 @@
                             <constraint firstAttribute="centerX" secondItem="6in-dY-Mqk" secondAttribute="centerX" id="O6u-S3-4az"/>
                             <constraint firstItem="6in-dY-Mqk" firstAttribute="top" secondItem="0ne-jf-zFP" secondAttribute="bottom" constant="8" id="xmT-fZ-MsY"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="resultPage"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="dqP-zs-BYl"/>
                     <connections>
